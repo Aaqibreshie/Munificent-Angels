@@ -60,12 +60,11 @@ export default function AdmissionForm() {
     setStatus(null);
 
     try {
-      // NOTE: Replace these with your actual EmailJS credentials
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        'YOUR_PUBLIC_KEY'
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
       setStatus('success');
       setFormData({
@@ -201,14 +200,6 @@ export default function AdmissionForm() {
                 Oops! Something went wrong. Please try again or contact us directly.
               </div>
             )}
-
-            {/* Credential Note */}
-            <div className={styles.credentialNote}>
-              <AlertTriangle size={14} />
-              <span>
-                <strong>Note:</strong> EmailJS credentials (Service ID, Template ID, Public Key) need to be configured in the code for emails to send.
-              </span>
-            </div>
 
             {/* Submit */}
             <button type="submit" className={styles.submitBtn} disabled={loading}>
