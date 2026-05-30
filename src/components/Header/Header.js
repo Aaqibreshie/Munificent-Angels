@@ -135,17 +135,31 @@ export default function Header() {
           <ul className={styles.navLinks}>
             {navLinks.map((link, idx) => (
               <li key={idx} className={styles.navItem}>
-                <Link href={link.href} className={styles.navLink}>
-                  {link.label}
-                  {link.children && <ChevronDown size={14} className={styles.chevron} />}
-                </Link>
+                {link.href === '/studio' ? (
+                  <a href={link.href} className={styles.navLink}>
+                    {link.label}
+                    {link.children && <ChevronDown size={14} className={styles.chevron} />}
+                  </a>
+                ) : (
+                  <Link href={link.href} className={styles.navLink}>
+                    {link.label}
+                    {link.children && <ChevronDown size={14} className={styles.chevron} />}
+                  </Link>
+                )}
+                
                 {link.children && (
                   <ul className={styles.dropdown}>
                     {link.children.map((child, cidx) => (
                       <li key={cidx}>
-                        <Link href={child.href} className={styles.dropdownLink}>
-                          {child.label}
-                        </Link>
+                        {child.href === '/studio' ? (
+                          <a href={child.href} className={styles.dropdownLink}>
+                            {child.label}
+                          </a>
+                        ) : (
+                          <Link href={child.href} className={styles.dropdownLink}>
+                            {child.label}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -198,25 +212,46 @@ export default function Header() {
                       Overview
                     </Link>
                     {link.children.map((child, cidx) => (
-                      <Link
-                        key={cidx}
-                        href={child.href}
-                        className={styles.mobileDropdownLink}
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {child.label}
-                      </Link>
+                      child.href === '/studio' ? (
+                        <a
+                          key={cidx}
+                          href={child.href}
+                          className={styles.mobileDropdownLink}
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {child.label}
+                        </a>
+                      ) : (
+                        <Link
+                          key={cidx}
+                          href={child.href}
+                          className={styles.mobileDropdownLink}
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {child.label}
+                        </Link>
+                      )
                     ))}
                   </div>
                 </>
               ) : (
-                <Link
-                  href={link.href}
-                  className={styles.mobileNavLink}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </Link>
+                link.href === '/studio' ? (
+                  <a
+                    href={link.href}
+                    className={styles.mobileNavLink}
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className={styles.mobileNavLink}
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                )
               )}
             </div>
           ))}
