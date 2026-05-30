@@ -1,0 +1,39 @@
+.stat {
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: var(--space-2);
+}
+
+.label {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.stat.light .number {
+  color: var(--color-white);
+}
+
+.stat.light .label {
+  color: rgba(255,255,255,0.8);
+}
+
+@media (max-width: 768px) {
+  .number {
+    font-size: var(--text-3xl);
+  }
+
+  .label {
+    font-size: var(--text-xs);
+  }
+}
