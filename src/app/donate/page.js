@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import SectionHeading from '@/components/SectionHeading/SectionHeading';
 import {
   Heart,
@@ -80,7 +81,7 @@ export default function DonatePage() {
 
   async function copyUPI() {
     try {
-      await navigator.clipboard.writeText('munificentangels@upi');
+      await navigator.clipboard.writeText('gpay-11254248577@okbizaxis');
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
@@ -191,13 +192,17 @@ export default function DonatePage() {
                 <QrCode size={24} />
                 UPI Payment
               </h3>
-              <div className={styles.qrPlaceholder}>
-                <QrCode size={48} />
-                <span className={styles.qrLabel}>UPI QR Code</span>
-                <span className={styles.qrSublabel}>Scan to Donate</span>
+              <div className={styles.qrImageWrapper}>
+                <Image
+                  src="/images/donate-qr.png"
+                  alt="Munificient Angels UPI QR Code"
+                  width={220}
+                  height={220}
+                  className={styles.qrImage}
+                />
               </div>
               <div className={styles.upiId}>
-                <span>munificentangels@upi</span>
+                <span>gpay-11254248577@okbizaxis</span>
                 <button
                   type="button"
                   className={styles.copyBtn}
