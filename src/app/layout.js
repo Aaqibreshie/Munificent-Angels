@@ -1,5 +1,6 @@
 import './globals.css';
 import SiteWrapper from '@/components/SiteWrapper/SiteWrapper';
+import { ClerkProvider } from '@clerk/nextjs';
 
 export const metadata = {
   title: {
@@ -27,7 +28,9 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#1B6B3A" />
       </head>
       <body suppressHydrationWarning>
-        <SiteWrapper>{children}</SiteWrapper>
+        <ClerkProvider>
+          <SiteWrapper>{children}</SiteWrapper>
+        </ClerkProvider>
       </body>
     </html>
   );
