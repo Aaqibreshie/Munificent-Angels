@@ -1,8 +1,9 @@
 import { currentUser, clerkClient } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
+import { UserButton } from '@clerk/nextjs';
 import AssignCourseForm from './AssignCourseForm';
 import styles from './page.module.css';
-import { Users, Settings } from 'lucide-react';
+import { Users, Settings, Lock } from 'lucide-react';
 
 export const revalidate = 0; // Ensure data is always fresh
 
@@ -15,7 +16,20 @@ export default async function AdminStudentsPage() {
 
   // Security check: Must be an admin to access this page
   if (user.publicMetadata?.role !== 'admin') {
-    redirect('/'); // Kick non-admins out
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh', textAlign: 'center', padding: '2rem' }}>
+        <Lock size={64} color="#f57c00" style={{ marginBottom: '1rem' }} />
+        <h1 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Access Denied</h1>
+        <p style={{ color: '#666', marginBottom: '2rem' }}>
+          You are currently logged in as <strong>{user.emailAddresses[0]?.emailAddress}</strong>.<br/>
+          This account does not have Administrator privileges.
+        </p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: '#fff', padding: '1rem 2rem', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
+          <span>Click here to sign out or switch accounts:</span>
+          <UserButton afterSignOutUrl="/" />
+        </div>
+      </div>
+    );
   }
 
   const client = await clerkClient();
