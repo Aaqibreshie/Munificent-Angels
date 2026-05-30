@@ -42,6 +42,7 @@ export default function Footer() {
               <li><Link href="/swift"><ArrowRight size={14} /> Training Centers</Link></li>
               <li><Link href="/media"><ArrowRight size={14} /> Media</Link></li>
               <li><Link href="/contact"><ArrowRight size={14} /> Contact Us</Link></li>
+              <li><Link href="/studio" target="_blank"><ArrowRight size={14} /> Admin Login</Link></li>
             </ul>
           </div>
 

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, ChevronDown, Phone, Mail, MapPin, Heart } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Mail, MapPin, Heart, User } from 'lucide-react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import styles from './Header.module.css';
 
@@ -145,10 +145,15 @@ export default function Header() {
             ))}
           </ul>
 
-          <Link href="/donate" className={`btn btn-donate ${styles.donateBtn}`}>
-            <Heart size={16} fill="white" />
-            Donate Now
-          </Link>
+          <div className={styles.headerActions}>
+            <Link href="/donate" className={`btn btn-donate ${styles.donateBtn}`}>
+              <Heart size={16} fill="white" />
+              Donate Now
+            </Link>
+            <Link href="/studio" target="_blank" className={styles.adminIconBtn} title="Admin Dashboard">
+              <User size={18} />
+            </Link>
+          </div>
 
           {/* Mobile Toggle */}
           <button
