@@ -50,6 +50,15 @@ const navLinks = [
       { label: 'News & Events', href: '/media#news' },
     ]
   },
+  {
+    label: 'Portals',
+    href: '#',
+    children: [
+      { label: 'Student Portal', href: '/portal' },
+      { label: 'Admin Dashboard', href: '/admin/students' },
+      { label: 'Content Studio', href: '/studio' },
+    ]
+  },
   { label: 'Contact Us', href: '/contact' },
 ];
 
@@ -149,9 +158,6 @@ export default function Header() {
             <Link href="/donate" className={`btn btn-donate ${styles.donateBtn}`}>
               <Heart size={16} fill="white" />
               Donate Now
-            </Link>
-            <Link href="/studio" target="_blank" className={styles.adminIconBtn} title="Admin Dashboard">
-              <User size={18} />
             </Link>
           </div>
 
