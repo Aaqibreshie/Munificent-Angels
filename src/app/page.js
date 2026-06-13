@@ -7,7 +7,8 @@ import {
   ArrowRight, Play, ChevronLeft, ChevronRight,
   Wrench, Heart, Ribbon, ShieldCheck, Sprout, Users,
   CheckCircle, BarChart3, Monitor, Briefcase, Quote,
-  Eye, FileText, ChevronDown
+  Eye, FileText, ChevronDown, Cpu, Laptop, ShieldPlus,
+  HeartHandshake, Home, Ban, Building2
 } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading/SectionHeading';
 import StatCounter from '@/components/StatCounter/StatCounter';
@@ -15,7 +16,9 @@ import { programs, impactStats, testimonials, newsEvents, partners } from '@/dat
 import styles from './page.module.css';
 
 const iconMap = {
-  Wrench, Heart, Ribbon, ShieldCheck, Sprout, Users
+  Wrench, Heart, Ribbon, ShieldCheck, Sprout, Users,
+  Briefcase, Cpu, Laptop, ShieldPlus, HeartHandshake,
+  Home, Ban, Building2
 };
 
 /* ---- Hero Section ---- */
