@@ -1,0 +1,80 @@
+.hero {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroDesc {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.contentSection {
+  padding: 4rem 0;
+  background-color: #fafafa;
+}
+
+.contentContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contentContainer h2 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.5rem;
+}
+
+.contentContainer h2:first-child {
+  margin-top: 0;
+}
+
+.contentContainer p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.contentContainer ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.contentContainer li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .contentContainer {
+    padding: 2rem;
+  }
+}
