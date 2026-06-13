@@ -1,98 +1,194 @@
 export const programs = [
   {
-    id: 'skill-development',
-    title: 'Skill Development',
-    icon: 'Wrench',
-    shortDesc: 'Industry-oriented training & placement assistance for a better livelihood.',
-    longDesc: 'Our skill development programs provide comprehensive training in various trades and vocations, empowering youth with industry-relevant skills. We partner with government schemes like PMKVY and DDU-GKY to deliver certified training programs that lead to meaningful employment.',
+    id: 'pmkvy',
+    title: 'PMKVY 4.0 - Pradhan Mantri Kaushal Vikas Yojana',
+    icon: 'Briefcase',
+    shortDesc: 'Empowering unemployed youth by providing industry-oriented skills and sustainable livelihood opportunities.',
+    longDesc: 'Munificent Angels has extensive experience in successfully implementing PMKVY 4.0 projects under multiple sectors and trades. Complete project execution including candidate mobilization, counseling, training centre operations, assessments, placement coordination, SDMS management, and post-placement tracking.',
     image: '/images/projects/skill-development.png',
-    stats: { beneficiaries: '8,000+', programs: '45+', placements: '85%' },
+    stats: { beneficiaries: '8,000+', programs: 'IT, Healthcare, Retail', placements: 'High' },
     features: [
-      'PMKVY & DDU-GKY certified training',
-      'Industry-relevant curriculum',
-      'Hands-on practical experience',
-      'Placement assistance & job linkages',
-      'Post-training support & mentoring'
+      'Candidate Mobilization & Registration',
+      'Training Centre Operations',
+      'SDMS Portal Management',
+      'Placement Assistance & Employer Linkages',
+      'MIS Reporting & Documentation'
     ]
   },
   {
-    id: 'women-empowerment',
-    title: 'Women Empowerment',
-    icon: 'Heart',
-    shortDesc: 'Education, training, financial literacy & leadership programs for women.',
-    longDesc: 'We believe in empowering women through education, skill training, and financial literacy. Our women empowerment programs focus on building confidence, self-reliance, and leadership skills among women from marginalized communities.',
-    image: '/images/projects/women-empowerment.png',
-    stats: { beneficiaries: '5,000+', programs: '30+', villages: '25+' },
+    id: 'esdm',
+    title: 'ESDM - Electronics System Design & Manufacturing',
+    icon: 'Cpu',
+    shortDesc: 'Technical education, electronics, hardware, networking, and IT-enabled services.',
+    longDesc: 'Successfully implemented ESDM training programs focused on technical education, electronics, hardware, networking, and IT-enabled services. Developed technical labs and practical learning environments aimed at enhancing employability in the electronics and technology sectors.',
+    image: '/images/projects/skill-development.png',
+    stats: { beneficiaries: '1,500+', programs: 'Hardware, Networking', placements: 'High' },
     features: [
-      'Vocational training in beauty, tailoring & more',
-      'Financial literacy & savings programs',
-      'Self-help group formation',
-      'Leadership development workshops',
-      'Legal awareness & rights education'
+      'Technical Lab Setup & Infrastructure',
+      'Practical-Based Technical Training',
+      'Computer Hardware & Networking',
+      'Troubleshooting & Maintenance',
+      'Industry-Oriented Skill Development'
     ]
   },
   {
-    id: 'hiv-aids-projects',
-    title: 'HIV/AIDS Projects',
-    icon: 'Ribbon',
-    shortDesc: 'Awareness, counselling, projects & community outreach programs.',
-    longDesc: 'Our HIV/AIDS projects focus on creating awareness, providing counselling services, and running community outreach programs to combat stigma and promote testing. We work in close collaboration with NACO and state AIDS control societies.',
-    image: '/images/projects/hiv-aids.png',
-    stats: { beneficiaries: '15,000+', programs: '20+', communities: '50+' },
-    features: [
-      'Community awareness campaigns',
-      'Free testing & counselling centers',
-      'Anti-stigma initiatives',
-      'Care & support for PLHIV',
-      'Targeted intervention programs'
-    ]
-  },
-  {
-    id: 'drug-de-addiction',
-    title: 'Drug De-addiction',
-    icon: 'ShieldCheck',
-    shortDesc: 'Rehabilitation, counselling & awareness for a drug-free society.',
-    longDesc: 'Our drug de-addiction programs provide comprehensive rehabilitation, counselling, and community awareness initiatives. We work towards creating a drug-free society through prevention, treatment, and aftercare support.',
-    image: '/images/projects/drug-deaddiction.png',
-    stats: { beneficiaries: '3,000+', centers: '5+', recovery: '70%' },
-    features: [
-      'Awareness campaigns in schools & communities',
-      'Counselling & rehabilitation services',
-      'Family support programs',
-      'Aftercare & reintegration support',
-      'Community-based prevention initiatives'
-    ]
-  },
-  {
-    id: 'livelihood-projects',
-    title: 'Livelihood Projects',
-    icon: 'Sprout',
-    shortDesc: 'Self-employment, livelihood promotion & entrepreneurship development.',
-    longDesc: 'Our livelihood projects focus on promoting sustainable livelihoods through self-employment, micro-enterprise development, and skills training. We help individuals build sustainable income sources and achieve economic independence.',
-    image: '/images/projects/livelihood.png',
-    stats: { beneficiaries: '4,000+', enterprises: '200+', villages: '30+' },
-    features: [
-      'Micro-enterprise development support',
-      'Agricultural training & support',
-      'Market linkage & value chain development',
-      'Financial inclusion & credit access',
-      'Sustainable livelihood models'
-    ]
-  },
-  {
-    id: 'community-welfare',
-    title: 'Community Welfare',
+    id: 'day-nulm',
+    title: 'DAY-NULM',
     icon: 'Users',
-    shortDesc: 'Health camps, education support & care for vulnerable communities.',
-    longDesc: 'Our community welfare programs address the holistic needs of vulnerable communities through health camps, educational support, disaster relief, and social welfare initiatives. We work to build stronger, healthier communities.',
-    image: '/images/projects/community-welfare.png',
-    stats: { beneficiaries: '20,000+', camps: '100+', communities: '40+' },
+    shortDesc: 'Urban livelihood promotion and self-employment generation under Deendayal Antyodaya Yojana.',
+    longDesc: 'Worked extensively for urban livelihood promotion and self-employment generation. The organization focused on empowering unemployed youth, women, and marginalized communities through vocational training and livelihood support initiatives.',
+    image: '/images/projects/livelihood.png',
+    stats: { beneficiaries: '3,000+', programs: 'Vocational', placements: 'Self-employment' },
     features: [
-      'Free health camps & medical aid',
-      'Educational scholarships & support',
-      'Disaster relief & rehabilitation',
-      'Senior citizen care programs',
-      'Community infrastructure development'
+      'Community Mobilization',
+      'Vocational Training Facilitation',
+      'Placement Support',
+      'Self-Employment Guidance',
+      'Coordination with Urban Local Bodies'
+    ]
+  },
+  {
+    id: 'cts-scheme',
+    title: 'CTS Scheme - Craftsmen Training Scheme',
+    icon: 'Wrench',
+    shortDesc: 'Vocational and technical education, managing practical workshops and trade-based training.',
+    longDesc: 'Possesses strong experience in vocational and technical education under the Craftsmen Training Scheme. Managed practical workshops, technical demonstrations, trade-based training programmes, and industry-oriented skill development aligned with government standards.',
+    image: '/images/projects/skill-development.png',
+    stats: { beneficiaries: '2,000+', programs: 'Trade Skills', placements: 'High' },
+    features: [
+      'Technical Skill Training',
+      'Workshop Management',
+      'Trade Assessments & Examinations',
+      'Equipment Maintenance',
+      'Quality Assurance Compliance'
+    ]
+  },
+  {
+    id: 'ndlm',
+    title: 'NDLM & Digital Literacy Programs',
+    icon: 'Laptop',
+    shortDesc: 'Digital empowerment initiatives reducing the digital divide in rural and urban communities.',
+    longDesc: 'Actively contributed to digital empowerment initiatives under NDLM and related digital literacy programmes aimed at reducing the digital divide in rural and urban communities.',
+    image: '/images/projects/skill-development.png',
+    stats: { beneficiaries: '5,000+', programs: 'Digital Literacy', placements: 'N/A' },
+    features: [
+      'Basic Computer Education',
+      'Internet Awareness Sessions',
+      'Digital Payment Awareness',
+      'Online Service Facilitation',
+      'E-Governance Awareness'
+    ]
+  },
+  {
+    id: 'ti-idus',
+    title: 'Targeted Intervention - IDUs, Kupwara',
+    icon: 'ShieldPlus',
+    shortDesc: 'HIV/AIDS prevention, harm reduction, and rehabilitation support for Injecting Drug Users.',
+    longDesc: 'Implementing a continuous Targeted Intervention (TI) Project for Injecting Drug Users (IDUs) in Kupwara District. Sponsored by J&K AIDS Control Society (JKSACS) under NACO. Focused on HIV/AIDS prevention, harm reduction, rehabilitation support, and counseling services.',
+    image: '/images/projects/hiv-aids.png',
+    stats: { beneficiaries: 'Ongoing', programs: 'Harm Reduction', placements: 'N/A' },
+    features: [
+      'Community Outreach & Field Interventions',
+      'HIV/AIDS Prevention Awareness',
+      'Counseling & Rehabilitation Support',
+      'Needle Safety & Risk Reduction Awareness',
+      'Health Referral & Support Linkages'
+    ]
+  },
+  {
+    id: 'ti-fsws',
+    title: 'Targeted Intervention - FSWs, Srinagar',
+    icon: 'HeartHandshake',
+    shortDesc: 'HIV/AIDS prevention, awareness, counseling, and healthcare access for FSWs.',
+    longDesc: 'Implementing a continuous Targeted Intervention (TI) Project for Female Sex Workers (FSWs) in Srinagar District. Sponsored by J&K AIDS Control Society (JKSACS) under NACO. Focuses on HIV/AIDS prevention, counseling, rehabilitation support, and community-based outreach.',
+    image: '/images/projects/women-empowerment.png',
+    stats: { beneficiaries: 'Ongoing', programs: 'Prevention', placements: 'N/A' },
+    features: [
+      'HIV/AIDS Awareness Campaigns',
+      'Counseling & Guidance Services',
+      'STI/RTI Awareness & Referral Support',
+      'Rehabilitation & Community Support',
+      'Peer Education Programmes'
+    ]
+  },
+  {
+    id: 'osc-mission-shakti',
+    title: 'One Stop Centre (OSC) - Mission Shakti',
+    icon: 'Home',
+    shortDesc: 'Integrated support services to women facing violence and distress.',
+    longDesc: 'Managed women welfare and protection initiatives under Mission Shakti through One Stop Centre projects aimed at providing integrated support services to women facing violence and distress. Ensured timely support, counseling, rehabilitation assistance, and safe intervention services.',
+    image: '/images/projects/women-empowerment.png',
+    stats: { beneficiaries: 'Ongoing', programs: 'Women Welfare', placements: 'N/A' },
+    features: [
+      'Beneficiary Assistance',
+      'Counseling Coordination',
+      'Legal & Police Coordination',
+      'Monitoring & Case Management',
+      'Awareness Campaigns'
+    ]
+  },
+  {
+    id: 'drug-prevention',
+    title: 'Community-Based Drug Abuse Prevention',
+    icon: 'Ban',
+    shortDesc: '7-Day Community-Based Drug Abuse Prevention Programme across multiple districts.',
+    longDesc: 'Successfully implemented a 7-Day Community-Based Drug Abuse Prevention Programme under the sponsorship of the National Institute of Social Defence (NISD). Spread awareness regarding harmful effects of drug abuse, promote preventive measures, and encourage community participation.',
+    image: '/images/projects/drug-deaddiction.png',
+    stats: { beneficiaries: '10,000+', programs: 'Awareness', placements: 'N/A' },
+    features: [
+      'Drug Abuse Awareness Sessions',
+      'Counseling & Motivational Sessions',
+      'Mental Health Awareness Workshops',
+      'Street Plays & Awareness Campaigns',
+      'Rehabilitation & Preventive Awareness Support'
+    ]
+  },
+  {
+    id: 'hiv-aids-awareness',
+    title: 'HIV/AIDS Awareness & TI Programmes',
+    icon: 'Ribbon',
+    shortDesc: 'HIV/AIDS awareness, Targeted Intervention (TI) projects, and drug abuse prevention.',
+    longDesc: 'Actively working on HIV/AIDS awareness, Targeted Intervention (TI) projects, drug abuse prevention, counseling, rehabilitation support, and community-based outreach programmes under the sponsorship and support of J&K AIDS Control Society (JKSACS) and NACO.',
+    image: '/images/projects/hiv-aids.png',
+    stats: { beneficiaries: 'Thousands', programs: 'Awareness', placements: 'N/A' },
+    features: [
+      'HIV/AIDS Awareness Campaigns',
+      'Youth Motivation & Guidance Sessions',
+      'School, College & University Awareness Seminars',
+      'Mental Health Awareness Programmes',
+      'Health Awareness & Counseling Camps'
+    ]
+  },
+  {
+    id: 'training-centre-management',
+    title: 'Training Centre Management & Institutional Expertise',
+    icon: 'Building2',
+    shortDesc: 'Establishing and managing vocational training institutes and government-sponsored project facilities.',
+    longDesc: 'With more than 15 years of professional experience, Munificent Angels has developed strong institutional capacity in establishing and managing vocational training institutes and government-sponsored project facilities.',
+    image: '/images/projects/community-welfare.png',
+    stats: { beneficiaries: 'N/A', programs: 'Management', placements: 'N/A' },
+    features: [
+      'Training Centre Administration',
+      'Staff Supervision & HR Management',
+      'Infrastructure & Lab Management',
+      'Government Documentation',
+      'Audit & Inspection Handling'
+    ]
+  },
+  {
+    id: 'social-development',
+    title: 'Social Development & Community Welfare',
+    icon: 'Users',
+    shortDesc: 'Social welfare and inclusive community development initiatives across Jammu & Kashmir.',
+    longDesc: 'Apart from government-sponsored skill development projects, Munificent Angels is actively involved in social welfare and inclusive community development initiatives across Jammu & Kashmir.',
+    image: '/images/projects/community-welfare.png',
+    stats: { beneficiaries: 'Thousands', programs: 'Welfare', placements: 'N/A' },
+    features: [
+      'Youth Empowerment',
+      'Women Empowerment',
+      'Livelihood Generation',
+      'Transgender Rehabilitation',
+      'Vocational Training for Marginalized Communities'
     ]
   }
 ];
